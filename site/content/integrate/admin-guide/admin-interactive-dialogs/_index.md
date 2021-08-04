@@ -442,7 +442,7 @@ Below is a full example of a JSON payload that creates an interactive dialog in 
                  }
               ]
            }
-        ],
+        ],admin-interactive-dialogs
         "submit_label":"Submit",
         "notify_on_cancel":true,
         "state":"somestate"
@@ -454,9 +454,9 @@ Below is a full example of a JSON payload that creates an interactive dialog in 
 
 ## Share your integration
 
-If you've built an integration for Mattermost, please consider [sharing your work](https://mattermost.org/share-your-mattermost-projects) in our [app directory](https://integrations.mattermost.com).
+If you've built an integration for Mattermost, please consider [sharing your work](https://developers.mattermost.com/integrate/getting-started/) in our [app directory](https://mattermost.com/marketplace/).
 
-The [app directory](https://integrations.mattermost.com) lists open source integrations developed by the Mattermost community and are available for download, customization and deployment to your private cloud or self-managed infrastructure.
+The [app directory](https://mattermost.com/marketplace/) lists open source integrations developed by the Mattermost community and are available for download, customization and deployment to your private cloud or self-managed infrastructure.
 
 ## Slack compatibility
 
@@ -465,7 +465,7 @@ Like Slack, dialogs are triggered by an interactive message menu or button, or b
 The schema for these objects is the same as Slack's, except for the following differences:
 
   - `url` field must be specified for Mattermost dialogs, which specifies where the request is sent to. In Slack, this is handled by specifying the URL within the Slack app that uses the dialog.
-  - `icon_url` is an optional field to set the icon for Mattermost dialogs. In Slack, the dialogs use the icon set for the app that uses the dialog.
+  - `icon_url` is an optional field toadmin-interactive-dialogs set the icon for Mattermost dialogs. In Slack, the dialogs use the icon set for the app that uses the dialog.
   - `label` in Slack dialogs is `display_name` in Mattermost dialogs for a more consistent naming convention with other integration types.
   - `hint` in Slack dialogs is `help_text` in Mattermost dialogs for a more consistent naming convention with other integration types.
   - `value` in Slack dialogs is `default` in Mattermost dialogs for a more consistent naming convention with other integration types.
